@@ -1,0 +1,53 @@
+        #thumbContainer {
+        display: table;
+        margin: auto;
+      }
+
+        .thumbRow {
+        display: table-row;
+      }
+      .thumbCell {
+        display: table-cell;
+        width: 270px;
+        padding: 10px;
+      }
+      .thumbCell img {
+        width: 270px;
+        height: 180px;
+        border: 5px ridge #07a;
+        margin: 0;
+      }
+      #videoOverlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        z-index: 1;
+        overflow: hidden;
+        text-align: center;
+        /* Hidden until needed. */
+        display: none;
+      }
+      #closeButton {
+        position: relative;
+        margin-top: 10px;
+        z-index: 2;
+      }
+      #vcenterWrapper {
+        position: absolute;
+        width: 0;
+        height: 0;
+        /* Move the top-left corner of this div to the center. */
+        top: 50%;
+        left: 50%;
+      }
+      #video {
+        width: 640px;
+        height: 480px;
+        position: relative;
+        /* Center the video inside the overlay. */
+        top: -240px;
+        left: -320px;
+      }

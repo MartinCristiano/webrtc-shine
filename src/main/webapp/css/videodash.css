@@ -1,0 +1,13 @@
+#videoOverlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        z-index: 1;
+        overflow: hidden;
+        text-align: center;
+        /* Hidden until needed. */
+        display: none;
+      }
